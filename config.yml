@@ -8,8 +8,6 @@ api:
   port: 8081
   ssl:
     enabled: false
-    cert: /etc/letsencrypt/live/alchemically-irretraceable-haleigh.ngrok-free.dev/fullchain.pem
-    key: /etc/letsencrypt/live/alchemically-irretraceable-haleigh.ngrok-free.dev/privkey.pem
   upload_limit: 100
 
 system:
@@ -19,5 +17,6 @@ system:
 
 allowed_mounts: []
 
+# URL del panel principal
 remote: 'http://9n3plm-8080.csb.app'
-timezone: America/Managua
+# ⚠️ Eliminado timezone (causaba bug en Koyeb)
